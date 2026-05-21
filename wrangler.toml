@@ -1,0 +1,42 @@
+name = "razor"
+main = "src/index.ts"
+compatibility_date = "2025-01-02"
+
+#routes = [
+#    "campaigns.iskconmangalore.org/single/*"
+#]
+#[[routes]]
+#pattern = "campaigns.iskconmangalore.com/*"
+#zone_name = "iskconmangalore.org"
+
+compatibility_flags = [ "nodejs_compat" ]
+
+[vars]
+# MY_VAR = "my-variable"
+DATABASE_URL = "postgresql://neondb_owner:npg_e0L7DGPyxSlQ@ep-late-frost-adbr6e14-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+RAZ_ID = "rzp_test_h80a9qdKzKl9pm"
+RAZ_SECRET = "G8oBD7K4CUECcc7GNc0q0vH5"
+
+[logs]
+level = "info"
+include_invocation = true
+sampling_rate = 1.0
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
+
+# [observability]
+# enabled = true
+# head_sampling_rate = 1
